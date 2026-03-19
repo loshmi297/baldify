@@ -160,8 +160,7 @@ async function makeBald(imageBuffer, mime) {
 
   console.log('  → Running FLUX Kontext Pro...');
   const predId = await createPrediction('black-forest-labs/flux-kontext-pro', {
-    prompt:           "Make this person completely bald. Remove all hair from the top and sides of their head. Keep their face, expression, clothing, background, and lighting exactly the same. Add realistic skin texture on the scalp.",
-    input_image:      imageURL,
+prompt: "Make this person completely bald. Remove every single strand of hair — including all hair on top of the head, all side hair, all hair falling down the shoulders, all hair on the neck and chest area. The person should have zero hair anywhere. Keep their face, expression, eyes, makeup, clothing, background, and lighting exactly the same. Smooth realistic bald scalp with natural skin texture.",    input_image:      imageURL,
     output_format:    'png',
     safety_tolerance: 6
   });
