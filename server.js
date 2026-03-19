@@ -12,7 +12,7 @@ const HF_TOKEN = process.env.HF_TOKEN || 'YOUR_HF_TOKEN_HERE';
 const PORT     = process.env.PORT || 3000;
 
 // Working inpainting model on HF
-const HF_INPAINT_URL = 'https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-2-inpainting';
+const HF_INPAINT_URL = 'https://router.huggingface.co/hf-inference/models/stabilityai/stable-diffusion-2-inpainting';
 // ──────────────────────────────────────────────────────────────────────────────
 
 const MIME_TYPES = {
